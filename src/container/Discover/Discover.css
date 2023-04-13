@@ -1,0 +1,105 @@
+.app__discover-background{
+    background: #EBEDA433;
+}
+
+.app__discover {
+    display: flex;
+    flex-direction: column;
+
+    width: 90%;
+    margin: 0 auto;
+}
+
+.app__discover h1 {
+    color: var(--color-green);
+}
+
+.app__discover-header{
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 4rem;
+    padding-top: 4rem;
+}
+
+.app__discover-offers_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-bottom: 5rem;
+}
+
+.app__discover-offers {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+    column-gap: 1.5rem;
+}
+
+.app__discover-explore {
+    flex-direction: column;
+}
+
+.app__discover-explore_title {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 2rem;
+}
+
+.app__discover-explore_button {
+    background: var(--color-green);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    font-size: 1rem;
+    width: 300px;
+    height: 65px;
+    border: 0px;
+    color: #FFFFFF;
+}
+.app__discover-explore_button:hover{
+    background: slategrey;
+    transition: 0.4s;
+}
+
+.app__discover-explore_input  {
+    padding-left: 1rem;
+    width: 50%;
+    border: 0px;
+    font-size: 1rem;
+    height: 65px;
+    background: #FFFFFF;
+    box-shadow: 2px 5px 25px 8px rgba(0, 0, 0, 0.06);
+}
+
+.app__buttonAndInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 10rem;
+}
+
+@media screen and (min-width: 2000px) {
+    .app__discover {
+        min-width: 1000px;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .app__discover-offers {
+        flex-wrap: wrap;
+        row-gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app__discover-explore_button{
+        width: 120px;
+    }
+    .app__discover-header{
+        text-align: center;
+    }
+}
